@@ -1,4 +1,4 @@
-# PostHTML Plugin Boilerplate <img align="right" width="220" height="200" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg">
+# Component PostHTML Plugin <img align="right" width="220" height="200" title="PostHTML logo" src="http://posthtml.github.io/posthtml/logo.svg">
 
 [![NPM][npm]][npm-url]
 [![Deps][deps]][deps-url]
@@ -7,101 +7,75 @@
 [![Standard Code Style][style]][style-url]
 [![Chat][chat]][chat-badge]
 
-Clone this repo and explain what your plugin do and why thousands of people need it ;)
-
 Before:
 ``` html
-<html>
-  <body>
-    <p class="wow">OMG</p>
-  </body>
-</html>
+<!--my-button.html-->
+<my-button tag="a" class="big-button">
+    <content></content>
+</my-button>
+
+<!--navigation.html -->
+<navigation>
+  ...
+</navigation>
+
+<!--index.html -->
+<import src="my-button.html" tag="my-button">
+<import src="navigation.html" tag="navigation" as="nav">
+
+<header>
+    <nav class="header__nav"></nav>
+    <my-button href="#" class="header__btn">Click</my-button>
+</header>
 ```
 
 After:
 ``` html
-<svg xmlns="http://www.w3.org/2000/svg">
-  <text class="wow" id="wow_id" fill="#4A83B4" fill-rule="evenodd" font-family="Verdana">
-    OMG
-  </text>
-</svg>
+<header>
+    <div class="navigation header__nav">
+        ...
+    </div>
+    <a href="#" class="my-button big-button header__btn">Click</a>
+</header>
 ```
 
 ## Install
 
-Describe how big guys can install your plugin.
-
-> npm i posthtml posthtml-plugin
+> npm i posthtml-component
 
 ## Usage
 
-Describe how people can use this plugin. Include info about build systems if it's
-necessary.
-
 ``` js
 const fs = require('fs');
 const posthtml = require('posthtml');
-const posthtmlPlugin = require('posthtml-plugin');
+const posthtmlcomponent = require('posthtml-component');
 
 posthtml()
-    .use(posthtmlPlugin({ /* options */ }))
+    .use(posthtmlcomponent({ /* options */ }))
     .process(html/*, options */)
     .then(result => fs.writeFileSync('./after.html', result.html));
-```
-
-## Options
-
-Describe all features of your plugin with examples of usage.
-
-### Feature
-Before:
-``` html
-<html>
-  <body>
-    <p>OMG</p>
-  </body>
-</html>
-```
-Add option:
-``` js
-const fs = require('fs');
-const posthtml = require('posthtml');
-const posthtmlPlugin = require('posthtml-plugin');
-
-posthtml()
-    .use(posthtmlPlugin({ feature: 'wow' }))
-    .process(html/*, options */)
-    .then(result => fs.writeFileSync('./after.html', result.html));
-```
-After:
-``` html
-<html>
-  <body>
-    <p class="wow">OMG</p>
-  </body>
-</html>
 ```
 
 ### Contributing
 
-See [PostHTML Guidelines](https://github.com/posthtml/posthtml/tree/master/docs) and [contribution guide](CONTRIBUTING.md).
+See [contribution guide](CONTRIBUTING.md).
 
 ### License [MIT](LICENSE)
 
-[npm]: https://img.shields.io/npm/v/posthtml.svg
-[npm-url]: https://npmjs.com/package/posthtml
+[npm]: https://img.shields.io/npm/v/posthtml-component.svg
+[npm-url]: https://npmjs.com/package/posthtml-component
 
-[deps]: https://david-dm.org/posthtml/posthtml.svg
-[deps-url]: https://david-dm.org/posthtml/posthtml
+[deps]: https://david-dm.org/scrum/posthtml-component.svg
+[deps-url]: https://david-dm.org/scrum/posthtml-component
 
 [style]: https://img.shields.io/badge/code%20style-standard-yellow.svg
 [style-url]: http://standardjs.com/
 
-[build]: https://travis-ci.org/posthtml/posthtml.svg?branch=master
-[build-badge]: https://travis-ci.org/posthtml/posthtml?branch=master
+[build]: https://travis-ci.org/scrum/posthtml-component.svg?branch=master
+[build-badge]: https://travis-ci.org/scrum/posthtml-component?branch=master
 
-[cover]: https://coveralls.io/repos/posthtml/posthtml/badge.svg?branch=master
-[cover-badge]: https://coveralls.io/r/posthtml/posthtml?branch=master
+[cover]: https://coveralls.io/repos/scrum/posthtml-component/badge.svg?branch=master
+[cover-badge]: https://coveralls.io/r/scrum/posthtml-component?branch=master
 
 
 [chat]: https://badges.gitter.im/posthtml/posthtml.svg
