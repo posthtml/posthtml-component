@@ -6,7 +6,7 @@
   "ava": {
     "verbose": "true"
   },
-  "bugs": "https://github.com/scrum/posthtml-component/issues",
+  "bugs": "https://github.com/posthtml/posthtml-component/issues",
   "dependencies": {
     "posthtml": "^0.11.4"
   },
@@ -24,7 +24,7 @@
   "engines": {
     "node": ">=8"
   },
-  "homepage": "https://github.com/scrum/posthtml-component",
+  "homepage": "https://github.com/posthtml/posthtml-component",
   "keywords": [
     "html",
     "posthtml",
@@ -35,7 +35,7 @@
   "files": [
     "lib/"
   ],
-  "repository": "scrum/posthtml-component",
+  "repository": "posthtml/posthtml-component",
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md",
     "lint": "standard | snazzy",

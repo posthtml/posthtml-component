@@ -65,17 +65,17 @@ See [contribution guide](CONTRIBUTING.md).
 [npm]: https://img.shields.io/npm/v/posthtml-component.svg
 [npm-url]: https://npmjs.com/package/posthtml-component
 
-[deps]: https://david-dm.org/scrum/posthtml-component.svg
-[deps-url]: https://david-dm.org/scrum/posthtml-component
+[deps]: https://david-dm.org/posthtml/posthtml-component.svg
+[deps-url]: https://david-dm.org/posthtml/posthtml-component
 
 [style]: https://img.shields.io/badge/code%20style-standard-yellow.svg
 [style-url]: http://standardjs.com/
 
-[build]: https://travis-ci.org/scrum/posthtml-component.svg?branch=master
-[build-badge]: https://travis-ci.org/scrum/posthtml-component?branch=master
+[build]: https://travis-ci.org/posthtml/posthtml-component.svg?branch=master
+[build-badge]: https://travis-ci.org/posthtml/posthtml-component?branch=master
 
-[cover]: https://coveralls.io/repos/scrum/posthtml-component/badge.svg?branch=master
-[cover-badge]: https://coveralls.io/r/scrum/posthtml-component?branch=master
+[cover]: https://coveralls.io/repos/posthtml/posthtml-component/badge.svg?branch=master
+[cover-badge]: https://coveralls.io/r/posthtml/posthtml-component?branch=master
 
 
 [chat]: https://badges.gitter.im/posthtml/posthtml.svg
