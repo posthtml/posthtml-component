@@ -1,12 +1,12 @@
 {
-  "name": "posthtml-plugin",
-  "description": "PostHTML plugin description",
-  "version": "1.0.0",
+  "name": "posthtml-component",
+  "description": "component PostHTML plugin",
+  "version": "0.0.0",
   "author": "PostHTML",
   "ava": {
     "verbose": "true"
   },
-  "bugs": "https://github.com/posthtml/posthtml-plugin-boilerplate/issues",
+  "bugs": "https://github.com/posthtml/posthtml-component/issues",
   "dependencies": {
     "posthtml": "^0.11.4"
   },
@@ -19,12 +19,12 @@
     "husky": "^3.0.0",
     "mversion": "^1.10.1",
     "snazzy": "^8.0.0",
-    "standard": "^12.0.1"
+    "standard": "^14.3.1"
   },
   "engines": {
     "node": ">=8"
   },
-  "homepage": "https://github.com/posthtml/posthtml-plugin-boilerplate",
+  "homepage": "https://github.com/posthtml/posthtml-component",
   "keywords": [
     "html",
     "posthtml",
@@ -32,7 +32,10 @@
   ],
   "license": "MIT",
   "main": "lib",
-  "repository": "posthtml/posthtml-plugin-boilerplate",
+  "files": [
+    "lib/"
+  ],
+  "repository": "posthtml/posthtml-component",
   "scripts": {
     "version": "conventional-changelog -i changelog.md -s -r 0 && git add changelog.md",
     "lint": "standard | snazzy",
